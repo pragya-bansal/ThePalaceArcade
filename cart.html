@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Palace Arcade</title>
+    <title>Cart - Retro Arcade</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
 <body>
+
 <header>
-    <h1>The Palace Arcade</h1>
+    <h1>Your Cart 🛒</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="games.html">Games</a>
@@ -18,13 +18,13 @@
         <a href="cart.html">Cart</a>
     </nav>
 </header>
-<div class="hero">
-    <div class="container">
-          <h2>Welcome to the Old-School Arcade!</h2>
-          <p>Experience the classic games of your childhood.</p>
-          <p>Host your most memorable events.</p>
-          <p>Become members to avail exclusive offers!</p>
-    </div>
+    
+<div class="container">
+    <h5>Each token is worth ₹20. Please keep in mind</h5>
+    <div id="cartItems"></div>
+    <button onclick="submitCart()" class="book-btn">Submit Cart</button>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
