@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback | Retro Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>Retro Arcade</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="book.html">Book Event</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Feedback</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Arcade Feedback</h2>
+
+    <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Your Name" required><br><br>
+
+        <input type="email" id="email" placeholder="Your Email" required><br><br>
+
+        <select id="rating" required>
+            <option value="">Rate Us :)</option>
+            <option>1 - ⭐</option>
+            <option>2 - ⭐⭐</option>
+            <option>3 - ⭐⭐⭐</option>
+            <option>4 - ⭐⭐⭐⭐</option>
+            <option>5 - ⭐⭐⭐⭐⭐</option>
+        </select><br><br>
+
+        <textarea id="message" placeholder="Give us feedback" rows="5" required></textarea><br><br>
+
+        <button type="button" onclick="saveFeedback()">Save</button>
+    </form>
+
+    <br>
+
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Arcade Event | Retro Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>The Palace Arcade</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="book.html">Book Event</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="booking-wrapper">
+    <h2>Book the arcade to host your party!</h2>
+
+    <form class="booking-grid" id ="bookingForm">
+
+        <div class="form-box">
+            <label>Name:</label>
+            <input type="text" placeholder="Your Name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="your@email.com">
+
+            <label>Phone:</label>
+            <input type="text" placeholder="9876543210">
+
+            <label>Event Type:</label>
+            <select>
+                <option>Birthday Party</option>
+                <option>Private Party</option>
+                <option>Gaming Tournament</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-box">
+            <label>Party Size:</label>
+            <input type="number" min="1" placeholder="Number">
+
+            <label>Event Date:</label>
+            <input type="date">
+
+            <label>Start Time:</label>
+            <input type="time">
+
+            <label>End Time:</label>
+            <input type="time">
+
+            <label>Special Requests:</label>
+            <textarea placeholder="Any notes..."></textarea>
+        </div>
+
+    </form>
+
+    <button class="book-btn" type="submit" form="bookingForm">Book Event</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+

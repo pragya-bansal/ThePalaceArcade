@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: black;
+    color: #00ffea;
+}
+
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #00ffea;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #00ffea;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ff0077;
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+button {
+    background: #ff0077;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #00ffea;
+    color: black;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #111;
+    color: #00ffea;
+    border: 2px solid #00ffea;
+}
+/* Membership Cards Layout */
+.membership-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    padding: 20px;
+    background: #111;
+    border: 3px solid #00ffea;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffea;
+    text-align: center;
+}
+
+.card h3 {
+    color: #ff0077;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.card li {
+    margin: 8px 0;
+}
+
+/* Tier Colors */
+.normal { border-color: #00ffea; }
+.silver { border-color: #c0c0c0; box-shadow: 0 0 10px #c0c0c0; }
+.gold { border-color: gold; box-shadow: 0 0 10px gold; }
+
+/* Recharge Box */
+.recharge-box {
+    background: #111;
+    border: 3px solid #00ffea;
+    padding: 25px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffea;
+}
+
+/*new bookings*/
+/* Full page no-scroll event booking */
+.booking-wrapper {
+     /* Fit page under header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00ffea;
+    padding-top: 20px;
+}
+
+.booking-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+/* Two-column layout */
+.booking-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 70%;
+}
+
+.form-box {
+    background: #111;
+    padding: 30px;
+    border: 3px solid #00ffea;
+    box-shadow: 0 0 12px #00ffea;
+    border-radius: 10px;
+}
+
+/* Inputs */
+.form-box label {
+    font-size: 12px;
+    color: #ff0077;
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 90%;
+    background: #000;
+    border: 2px solid #00ffea;
+    color: #00ffea;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.form-box textarea {
+    height: 60px;
+    resize: none;
+}
+
+/* Button */
+.book-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff0077;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.book-btn:hover {
+    background: #00ffea;
+    color: black;
+}
+/*website background*/
+/* Hero section with background image */
+.hero {
+    background-image: url("images/arcade-bg.jpg"); ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: calc(100vh - 120px); /* height below header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Keep text readable */
+.hero .container {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 40px;
+    border: 3px solid #00ffea;
+    box-shadow: 0 0 15px #00ffea;
+    max-width: 800px;
+}
+.hero-bg {
+    background-attachment: fixed;
+}
