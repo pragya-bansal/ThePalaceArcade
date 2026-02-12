@@ -8,21 +8,33 @@
 <body>
 
 <header>
-    <h1>Your Cart 🛒</h1>
+    <h1>Your Cart </h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="games.html">Games</a>
         <a href="book.html">Book Event</a>
-        <a href="membership.html">Membership</a>
         <a href="contact.html">Contact</a>
         <a href="cart.html">Cart</a>
     </nav>
 </header>
     
-<div class="container">
-    <h5>Each token is worth ₹20. Please keep in mind</h5>
-    <div id="cartItems"></div>
-    <button onclick="submitCart()" class="book-btn">Submit Cart</button>
+<div class="checkout-container">
+
+    <!-- LEFT SIDE - CART ITEMS -->
+    <div class="cart-section">
+        <h2>Cart Items</h2>
+        <div id="cartItems"></div>
+    </div>
+
+    <!--RIGHT SIDE - ORDER SUMMARY -->
+    <div class="summary-section">
+        <h2>Order Summary</h2>
+        <div id="orderSummary"></div>
+        <button onclick="submitCart()" class="checkout-btn">
+            Checkout
+        </button>
+    </div>
+
 </div>
 
 <script src="script.js"></script>

@@ -32,6 +32,39 @@ nav a:hover {
     padding: 40px;
     text-align: center;
 }
+       
+.containercart {
+    padding: 40px;
+    text-align: center;
+    max-width: 700px;
+    margin: 30px auto;          /* centers it */
+    padding: 20px;
+
+    background: #111;
+    border: 3px solid #00ffea;
+    border-radius: 10px;
+
+    box-shadow: 0 0 12px #00ffea;
+    text-align: center;
+}
+.containercart h5 {
+    font-size: 12px;
+    margin-bottom: 1px;
+    color: #ff0077;
+}
+#cartItems div {
+    line-height: 1.2;     /* adds vertical breathing space */
+    font-size: 12px;      /* slightly reduces crowding */
+}
+
+#cartItems button {
+    margin: 5px 5px 0 0;  /* space between buttons */
+}
+
+#cartItems strong {
+    display: block;
+    margin-bottom: 1px;   /* space under game name */
+}
 
 button {
     background: #ff0077;
@@ -56,7 +89,7 @@ input, textarea, select {
     color: #00ffea;
     border: 2px solid #00ffea;
 }
-/* Membership Cards Layout */
+/* membership card layout */
 .membership-section {
     display: flex;
     justify-content: center;
@@ -89,12 +122,12 @@ input, textarea, select {
     margin: 8px 0;
 }
 
-/* Tier Colors */
+/* Ssubscription tier colors */
 .normal { border-color: #00ffea; }
 .silver { border-color: #c0c0c0; box-shadow: 0 0 10px #c0c0c0; }
 .gold { border-color: gold; box-shadow: 0 0 10px gold; }
 
-/* Recharge Box */
+/* recharge box*/
 .recharge-box {
     background: #111;
     border: 3px solid #00ffea;
@@ -106,10 +139,10 @@ input, textarea, select {
     box-shadow: 0 0 10px #00ffea;
 }
 
-/*new bookings*/
-/* Full page no-scroll event booking */
+/*new bookings page*/
+/* full page no-scroll event booking */
 .booking-wrapper {
-     /* Fit page under header */
+     /* fit page under header */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +171,7 @@ input, textarea, select {
     border-radius: 10px;
 }
 
-/* Inputs */
+/* Inputs of booking page*/
 .form-box label {
     font-size: 12px;
     color: #ff0077;
@@ -204,4 +237,92 @@ input, textarea, select {
 }
 .hero-bg {
     background-attachment: fixed;
+}
+/* Main Layout */
+.checkout-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.cart-section {
+    flex: 2;
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* RIGHT SIDE */
+.summary-section {
+    flex: 1;
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #ff0077;
+    height: fit-content;
+}
+
+/* Individual Cart Item */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #00ffea;
+}
+
+/* Game Name */
+.item-name {
+    flex: 2;
+    text-align: left;
+}
+
+/* Quantity Controls */
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-controls span {
+    min-width: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Item Price */
+.item-total {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Buttons */
+.qty-controls button {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    background: #ff0077;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #00ffea;
+    color: black;
 }
